@@ -8,7 +8,7 @@ const commandFiles = fs
   .readdirSync("./commands")
   .filter((file) => file.endsWith(".js"));
 
-const commands = [].map((command) => command.toJSON());
+const commands = [];
 
 for (const file of commandFiles) {
   const command = require(`./commands/${file}`);
