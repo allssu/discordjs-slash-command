@@ -3,51 +3,48 @@ const { MessageActionRow, MessageButton, Message } = require("discord.js");
 
 module.exports = {
   data: new SlashCommandBuilder()
-    .setName("아르테미스")
-    .setDescription("아르테미스 떠돌이 상인"),
+    .setName("욘")
+    .setDescription("욘 떠돌이 상인"),
   async execute(interaction) {
     const buttons = [
       {
         customId: "test1",
-        label: "로그힐 초소(전호)",
+        label: "시작의 땅(전호)",
         style: "DANGER",
         async action(interaction) {
-          await interaction.reply("아르테미스 / 로그힐 초소 / 전호");
+          await interaction.reply("욘 / 로그힐 초소 / 전호");
         },
       },
       {
         customId: "test2",
-        label: "여행자의 초소(전호)",
+        label: "미완의 정원(전호)",
         style: "DANGER",
         async action(interaction) {
-          await interaction.reply("아르테미스 / 여행자의 초소 / 전호");
+          await interaction.reply("욘 / 미완의 정원 / 전호");
         },
       },
       {
         customId: "test3",
-        label: "레그리아 수도원(전호)",
+        label: "검은모루 작업장(전호)",
         style: "DANGER",
         async action(interaction) {
-          await interaction.reply("아르테미스 / 레그리아 수도원 / 전호");
+          await interaction.reply("욘 / 검은모루 작업장 / 전호");
         },
       },
       {
         customId: "test4",
-        label: "국경 감시 초소(전호)",
+        label: "무쇠망치 작업장(전호)",
         style: "DANGER",
         async action(interaction) {
-          await interaction.reply("아르테미스 / 국경 감시 초소 / 전호");
+          await interaction.reply("욘 / 무쇠망치 작업장 / 전호");
         },
       },
       {
-        customId: "test99",
-        label: "취소",
-        style: "PRIMARY",
+        customId: "test5",
+        label: "기약의 땅(전호)",
+        style: "DANGER",
         async action(interaction) {
-          await interaction.update({
-            content: "버튼을 닫습니다.",
-            components: [],
-          });
+          await interaction.reply("욘 / 기약의 땅 / 전호");
         },
       },
     ];
