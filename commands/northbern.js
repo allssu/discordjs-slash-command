@@ -3,48 +3,48 @@ const { MessageActionRow, MessageButton, Message } = require("discord.js");
 
 module.exports = {
   data: new SlashCommandBuilder()
-    .setName("욘")
-    .setDescription("욘 떠돌이 상인"),
+    .setName("베른북부")
+    .setDescription("베른 북부 떠돌이 상인"),
   async execute(interaction) {
     const buttons = [
       {
         customId: "test1",
-        label: "시작의 땅(전호)",
+        label: "크로나 항구(전호)",
         style: "DANGER",
         async action(interaction) {
-          await interaction.reply("욘 / 시작의 땅 / 전호");
+          await interaction.reply("베른 북부 / 크로나 항구 / 전호");
         },
       },
       {
         customId: "test2",
-        label: "미완의 정원(전호)",
+        label: "파르나 숲(전호)",
         style: "DANGER",
         async action(interaction) {
-          await interaction.reply("욘 / 미완의 정원 / 전호");
+          await interaction.reply("베른 북부 / 파르나 숲 / 전호");
         },
       },
       {
         customId: "test3",
-        label: "검은모루 작업장(전호)",
+        label: "페스나르 고원(전호)",
         style: "DANGER",
         async action(interaction) {
-          await interaction.reply("욘 / 검은모루 작업장 / 전호");
+          await interaction.reply("베른 북부 / 페스나르 고원 / 전호");
         },
       },
       {
         customId: "test4",
-        label: "무쇠망치 작업장(전호)",
+        label: "베르닐 삼림(전호)",
         style: "DANGER",
         async action(interaction) {
-          await interaction.reply("욘 / 무쇠망치 작업장 / 전호");
+          await interaction.reply("베른 북부 / 베르닐 삼림 / 전호");
         },
       },
       {
         customId: "test5",
-        label: "기약의 땅(전호)",
+        label: "발란카르 산맥(전호)",
         style: "DANGER",
         async action(interaction) {
-          await interaction.reply("욘 / 기약의 땅 / 전호");
+          await interaction.reply("베른 북부 / 발란카르 산맥 / 전호");
         },
       },
     ];
